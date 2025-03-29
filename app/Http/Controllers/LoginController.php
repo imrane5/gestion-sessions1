@@ -21,6 +21,6 @@ class LoginController extends Controller {
 
             return redirect('/session')->with('success', 'Connexion réussie.'); 
             
-        } return back()->withErrors(['email' => 'Identifiants incorrects']); 
+        } return back()->withErrors(['email' => 'Identifiants incorrects', 'mot_de_passe' => 'password incorrects']); 
     } 
 }
